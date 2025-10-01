@@ -1,16 +1,66 @@
-# React + Vite
+# React Blog Platform (Static)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+The React Blog Platform is a simple, static blog website built with React.js. It allows users to browse blog posts, read full content on a dedicated page, and optionally filter posts by category. This project demonstrates skills in React components, state management, routing, and responsive UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+### Home Page (Blog List)
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Displays all blog posts in cards (title, image, short description).
+- Responsive layout for mobile and desktop.
 
-## Expanding the ESLint configuration
+### Blog Details Page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Clicking on a blog card navigates to the full post.
+- Shows title, author, date, content, and image.
+
+### Optional Features
+
+- Comment section: users can add comments stored in useState.
+- Categories / Tags filter: filter posts by category.
+- Search bar: search blog posts by title.
+
+## Tech Stack
+
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS or plain CSS
+- **Routing**: React Router DOM
+- **State Management**: useState and optionally Context API for global state
+- **Data Storage**: Static JS array (posts.js)
+
+## Folder Structure
+
+```
+react-blog-platform/
+│
+├─ public/
+│   └─ index.html
+│
+├─ src/
+│   ├─ assets/           # Images and static assets
+│   ├─ components/       # Reusable components (Header, Footer, PostCard)
+│   ├─ pages/            # Pages (Home, PostDetails)
+│   ├─ data/             # Static posts data (posts.js)
+│   ├─ App.js            # Main app with routes
+│   ├─ index.js          # Entry point
+│   └─ styles.css        # Global CSS (if not using Tailwind)
+│
+└─ package.json
+```
+
+## Future Enhancements
+
+- Add a backend to store posts and comments (Node.js/Express + MongoDB).
+- Implement user authentication for adding posts and comments.
+- Add likes, shares, and search functionality.
+- Improve UI with animations and better responsiveness.
+
+## Screenshots
+
+(Add screenshots of your Home Page, Blog Details Page, and Comment Section)
+
+## Conclusion
+
+This project demonstrates your ability to build a dynamic, component-based React application with routing, state management, and responsive UI. It’s perfect for showcasing on your portfolio or GitHub.

@@ -6,10 +6,17 @@ import ContactPage from "./Pages/ContactPage";
 import BlogDetailsPage from "./Pages/BlogDetailsPage";
 import { Route, Routes } from "react-router-dom";
 import Header from "./Context/Header";
+import { useContext } from "react";
+import { ModeContext } from "./Context/ModeContext";
 const App = () => {
+  const { mode, setMode } = useContext(ModeContext);
   return (
-    <div>
-      <Header />
+    <div
+      className={` min-h-screen ${
+        mode ? "bg-white text-black" : "bg-gray-800 text-white"
+      }`}
+    >
+      <Header mode={mode} setMode={setMode} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
