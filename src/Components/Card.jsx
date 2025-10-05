@@ -5,8 +5,10 @@ import { FaArrowRight } from "react-icons/fa";
 const Card = ({ blog, mode }) => {
   return (
     <div
-      className="  rounded-md cursor-pointer  h-[400px]
-    shadow-md duration-300 hover:shadow-lg mt-10"
+      className={`  rounded-md cursor-pointer  h-[400px]
+    shadow-md duration-300 hover:shadow-lg  mt-10 ${
+      mode ? "" : "border-gray-600 border"
+    }`}
     >
       {/* blog image */}
       <div className="h-1/2">

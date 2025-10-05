@@ -18,7 +18,11 @@ const Header = ({ setMode, mode }) => {
   const [showMenu, setShowMenu] = useState(false); // Mobile menu toggle
 
   return (
-    <div className="flex justify-around items-center p-6">
+    <div
+      className={`flex justify-around items-center p-6 top-0 sticky z-50 ${
+        mode ? "bg-white" : "bg-gray-800"
+      }`}
+    >
       {/* Logo */}
       <Link to="/" className="flex items-center space-x-1 text-2xl">
         <span

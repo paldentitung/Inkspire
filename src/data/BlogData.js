@@ -257,7 +257,7 @@ const blogsData = [
     image: jsCodeImg,
   },
   {
-    id: 21,
+    id: 22,
     title: "Debugging Tips for Web Developers",
     excerpt: "Solve coding issues faster with debugging tips.",
     description:
