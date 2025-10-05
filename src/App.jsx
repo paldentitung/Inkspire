@@ -5,7 +5,7 @@ import AboutusPage from "./Pages/AboutusPage";
 import ContactPage from "./Pages/ContactPage";
 import BlogDetailsPage from "./Pages/BlogDetailsPage";
 import { Route, Routes } from "react-router-dom";
-import Header from "./Context/Header";
+import Header from "./Components/Header";
 import { useContext } from "react";
 import { ModeContext } from "./Context/ModeContext";
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<AboutusPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blog/:slug" element={<BlogDetailsPage />} />
       </Routes>
     </div>
   );
