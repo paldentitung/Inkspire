@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
-const Card = ({ blog, mode }) => {
+const Card = ({ blog, mode, primary }) => {
   return (
     <div
       className={`  rounded-md cursor-pointer  h-[400px]
@@ -21,7 +21,8 @@ const Card = ({ blog, mode }) => {
           {blog.excerpt}
         </p>
         <Link
-          className=" flex gap-1 items-center text-blue-500 hover:underline"
+          style={{ color: primary }}
+          className=" flex gap-1 items-center  hover:underline"
           to={`/blog/${blog.slug}`}
         >
           <span> Read More</span>
