@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Components/Header";
 import { useContext } from "react";
 import { ModeContext } from "./Context/ModeContext";
+import PageNotFound from "./Pages/PageNotFound";
 const App = () => {
   const { mode, setMode } = useContext(ModeContext);
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about" element={<AboutusPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog/:slug" element={<BlogDetailsPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );

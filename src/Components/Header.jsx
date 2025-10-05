@@ -58,7 +58,10 @@ const Header = ({ setMode, mode }) => {
 
       {/* Desktop search + toggle */}
       <div className="hidden md:flex space-x-4 items-center">
-        <FaSearch />
+        <Link to="/blogs">
+          {" "}
+          <FaSearch />
+        </Link>
         <div
           onClick={() => setMode(!mode)}
           className="relative w-[50px] shadow-md h-[10px] py-3 px-1 rounded-2xl border flex items-center cursor-pointer"
