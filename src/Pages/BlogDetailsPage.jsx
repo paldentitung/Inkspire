@@ -35,13 +35,13 @@ const BlogDetailsPage = () => {
       <button
         onClick={() => navigate(-1)}
         style={{ color: primary, borderBottomColor: primary }}
-        className="flex gap-1  items-center border-b-2  hover:cursor-pointer"
+        className="flex gap-1  items-center border-b-2 mb-4  hover:cursor-pointer"
       >
         <FaArrowLeft />
         <span>Go Back</span>
       </button>
       {/* Blog Title */}
-      <h1 className="text-3xl font-bold mb-4 text-center text-gray-800">
+      <h1 className="md:text-3xl font-bold mb-4 text-center text-gray-800">
         {selectedBlog.title}
       </h1>
 

@@ -9,6 +9,8 @@ import Header from "./Components/Header";
 import { useContext } from "react";
 import { ModeContext } from "./Context/ModeContext";
 import PageNotFound from "./Pages/PageNotFound";
+import AutoScrollToTop from "./Components/AutoScrollToTop";
+
 const App = () => {
   const { mode, setMode } = useContext(ModeContext);
   return (
@@ -18,6 +20,8 @@ const App = () => {
       }`}
     >
       <Header mode={mode} setMode={setMode} />
+      <AutoScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Blogs />} />
