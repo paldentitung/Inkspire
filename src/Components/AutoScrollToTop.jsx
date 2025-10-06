@@ -6,7 +6,7 @@ const AutoScrollToTop = () => {
   const { pathname } = useLocation();
   // run every time when path  or url change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
 
   return null;
