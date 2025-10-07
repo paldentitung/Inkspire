@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://inkspire-blogsite.netlify.app)
+
 
 ---
 
@@ -14,6 +14,11 @@
 Inkspire is a modern, responsive personal blog platform built with React.js, designed to showcase articles and creative content. It allows users to browse blog posts, read full articles on dedicated pages, and filter posts by category or tags. The platform is structured for seamless navigation, scalability, and a polished user experience, with placeholder pages for additional sections like About, Contact.
 
 The project leverages React Router for client-side routing, React Icons for UI elements, and Tailwind CSS for styling. Blog post data is managed statically for demo purposes but can be integrated with a backend API for dynamic content.
+
+## 🌐 Live Demo
+
+Dive into the live version of GoBeyond:  
+[🔗 Visit GoBeyond](https://inkspire-blogsite.netlify.app/)
 
 ## Features
 
