@@ -159,7 +159,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
----
+
 
 For questions or support, reach out via the `/contact` page or email: [paldendorjetitung@gmail.com](mailto:paldendorjetitung)
 
