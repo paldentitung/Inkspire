@@ -25,17 +25,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram size={20} style={{ color: primary }} />
+            <FaInstagram size={20} style={{ color: "#E4405F" }} />{" "}
           </a>
           <a
             href="https://www.facebook.com/palden.dorje.titung."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook
-              size={20}
-              style={{ color: mode ? "#1877F2" : "#ffffff" }}
-            />
+            <FaFacebook size={20} style={{ color: "#1877F2" }} />{" "}
           </a>
           <a
             href="https://github.com/paldentitung"
@@ -44,7 +41,7 @@ const Footer = () => {
           >
             <FaGithub
               size={20}
-              style={{ color: mode ? "#171515" : "#ffffff" }}
+              style={{ color: mode ? "#171515" : "#E0E0E0" }}
             />
           </a>
           <a
@@ -52,7 +49,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={20} style={{ color: primary }} />
+            <FaLinkedin size={20} style={{ color: "#0077B5" }} />{" "}
           </a>
         </div>
       </div>
