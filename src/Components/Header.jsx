@@ -11,8 +11,8 @@ const Header = ({ setMode, mode }) => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/blogs", label: "Blogs" },
-    { path: "/contact", label: "Contact us" },
-    { path: "/about", label: "About us" },
+    { path: "/about", label: "About me" },
+    { path: "/contact", label: "Contact " },
   ];
 
   const [showMenu, setShowMenu] = useState(false); // Mobile menu toggle
