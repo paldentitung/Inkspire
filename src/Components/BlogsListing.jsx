@@ -5,6 +5,7 @@ import Button from "./Button";
 import { ModeContext } from "../Context/ModeContext";
 import { ThemeContext } from "../Context/ThemeContext";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const BlogsListing = ({ showAll = false }) => {
   const { mode } = useContext(ModeContext);
@@ -92,7 +93,15 @@ const BlogsListing = ({ showAll = false }) => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-8">
             {visibleBlogs.map((blog) => (
-              <Card key={blog.id} blog={blog} mode={mode} primary={primary} />
+              <motion.div
+                key={blog.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8 }}
+              >
+                <Card blog={blog} mode={mode} primary={primary} />
+              </motion.div>
             ))}
           </div>
         )}
