@@ -18,7 +18,8 @@ The project leverages React Router for client-side routing, React Icons for UI e
 ## 🌐 Live Demo
 
 Dive into the live version of GoBeyond:  
-[🔗 Visit GoBeyond](https://inkspire-blogsite.netlify.app/)
+[🔗 Visit Inkspire
+](https://inkspire-blogsite.netlify.app/)
 
 ## Features
 
