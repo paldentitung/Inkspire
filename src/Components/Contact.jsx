@@ -13,7 +13,7 @@ const Contact = ({ mode, primary }) => {
     >
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-10">
         {/* Left Side: Contact Info */}
-        <div className="flex flex-col gap-2 md:w-1/2">
+        <div className="flex flex-col  gap-2 md:w-1/2">
           <h2 className="text-3xl font-bold">Contact Info</h2>
           <p>
             Email:{" "}
@@ -35,7 +35,7 @@ const Contact = ({ mode, primary }) => {
               +977 9800000000
             </a>
           </p>
-          <div className="flex gap-4 mt-2">
+          <div className="flex gap-4 mt-2 items-center">
             <a
               href="https://www.instagram.com/paldendorjetitung?igsh=MTltN2U5dHdtOG43eQ=="
               target="_blank"
@@ -43,7 +43,6 @@ const Contact = ({ mode, primary }) => {
             >
               <FaInstagram size={25} style={{ color: "#E4405F" }} />
             </a>
-
             <a
               href="https://www.facebook.com/palden.dorje.titung."
               target="_blank"
@@ -51,7 +50,6 @@ const Contact = ({ mode, primary }) => {
             >
               <FaFacebook size={25} style={{ color: "#1877F2" }} />
             </a>
-
             <a
               href="https://github.com/paldentitung"
               target="_blank"
@@ -62,9 +60,8 @@ const Contact = ({ mode, primary }) => {
                 style={{ color: mode ? "#171515" : "#ffffff" }}
               />
             </a>
-
             <a
-              href="https://www.linkedin.com/in/palden-dorje-titung-81736b323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.linkedin.com/in/palden-dorje-titung-81736b323"
               target="_blank"
               rel="noopener noreferrer"
             >
