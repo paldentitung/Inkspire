@@ -68,6 +68,24 @@ const BlogDetailsPage = () => {
         <ReactMarkdown
           rehypePlugins={[rehypeRaw]}
           components={{
+            p: ({ node, children }) => <p className="mb-4 ">{children}</p>,
+            h2: ({ node, children }) => (
+              <h2 className="text-2xl font-bold mt-6 mb-3">{children}</h2>
+            ),
+            h3: ({ node, children }) => (
+              <h3 className="text-xl font-semibold mt-4 mb-2">{children}</h3>
+            ),
+            ul: ({ node, children }) => (
+              <ul className="list-disc list-inside ml-4 mb-4">{children}</ul>
+            ),
+            a: ({ node, children, href }) => (
+              <a
+                href={href}
+                className="text-blue-500 underline hover:text-blue-700"
+              >
+                {children}
+              </a>
+            ),
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || "");
               return !inline && match ? (
@@ -80,7 +98,10 @@ const BlogDetailsPage = () => {
                   {String(children).replace(/\n$/, "")}
                 </SyntaxHighlighter>
               ) : (
-                <code className={className} {...props}>
+                <code
+                  className="bg-gray-100 text-red-600 px-1 rounded"
+                  {...props}
+                >
                   {children}
                 </code>
               );

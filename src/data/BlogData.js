@@ -168,20 +168,22 @@ Flexbox is great for 1D layouts (rows/columns), while Grid is ideal for 2D layou
 Visual Studio Code offers thousands of extensions that improve your workflow.
 
 ### Must-Have Extensions
-1. **Prettier** — Automatic code formatter  
-2. **ESLint** — Code linting for JavaScript  
-3. **Live Server** — Real-time browser reload  
-4. **GitLens** — View Git history in editor  
-5. **Auto Rename Tag** — Renames paired HTML tags  
-6. **Material Icon Theme** — Clean file icons  
-7. **Tailwind CSS IntelliSense** — Tailwind autocomplete  
-8. **Error Lens** — Highlights code errors  
-9. **Code Spell Checker** — Catches typos  
-10. **Path Intellisense** — Autocomplete for file paths  
 
-Install these to make coding smoother and more enjoyable.
+1. **Prettier** — Automatic code formatter
+2. **ESLint** — Code linting for JavaScript
+3. **Live Server** — Real-time browser reload
+4. **GitLens** — View Git history in editor
+5. **Auto Rename Tag** — Renames paired HTML tags
+6. **Material Icon Theme** — Clean file icons
+7. **Tailwind CSS IntelliSense** — Tailwind autocomplete
+8. **Error Lens** — Highlights code errors
+9. **Code Spell Checker** — Catches typos
+10. **Path Intellisense** — Autocomplete for file paths
+
+Install these extensions to make coding smoother and more enjoyable.
 `,
   },
+
   {
     id: 6,
     title: "Node.js Basics: Your First Server",
