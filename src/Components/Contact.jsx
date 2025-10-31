@@ -32,7 +32,7 @@ const Contact = ({ mode, primary }) => {
               className={`underline`}
               style={{ color: primary }}
             >
-              +977 9800000000
+              +977 9768915946
             </a>
           </p>
           <div className="flex gap-4 mt-2 items-center">
@@ -79,7 +79,7 @@ const Contact = ({ mode, primary }) => {
             <input
               type="text"
               placeholder="Your Name"
-              className={`w-full px-4 py-2 rounded-md outline-none border ${
+              className={`w-full px-4 py-2  outline-none  ring  ring-teal-500 focus:shadow-sm focus:shadow-teal-500  ${
                 mode ? "bg-white text-gray-800" : "bg-gray-800 text-white"
               }`}
               style={{ borderColor: primary }}
@@ -88,7 +88,7 @@ const Contact = ({ mode, primary }) => {
             <input
               type="email"
               placeholder="Your Email"
-              className={`w-full px-4 py-2 rounded-md outline-none border ${
+              className={`w-full px-4 py-2  outline-none   ring-1 ring-teal-500 focus:shadow-sm focus:shadow-teal-500  ${
                 mode ? "bg-white text-gray-800" : "bg-gray-800 text-white"
               }`}
               style={{ borderColor: primary }}
@@ -97,7 +97,7 @@ const Contact = ({ mode, primary }) => {
             <textarea
               rows={4}
               placeholder="Your Message"
-              className={`w-full px-4 py-2 rounded-md outline-none border ${
+              className={`w-full px-4 py-2  outline-none resize-none  ring-1 ring-teal-500 focus:shadow-sm focus:shadow-teal-500  ${
                 mode ? "bg-white text-gray-800" : "bg-gray-800 text-white"
               }`}
               style={{ borderColor: primary }}
