@@ -21,7 +21,7 @@ const Header = ({ setMode, mode }) => {
     <div
       className={`top-0  sticky z-50 p-6 ${mode ? "bg-white" : "bg-gray-800"}`}
     >
-      <div className=" w-full max-w-6xl mx-auto flex justify-between items-center">
+      <div className="w-full max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-1 text-2xl">
           <span
